@@ -9,6 +9,8 @@ import android.widget.*;
 public class ActMain extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton btnAdicionar;
+    private EditText edtPesquisa;
+    private ListView lstContatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +18,8 @@ public class ActMain extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.act_main);
 
         btnAdicionar = (ImageButton) findViewById(R.id.btnAdicionar);
+        edtPesquisa  = (EditText) findViewById(R.id.edtPesquisa);
+        lstContatos  = (ListView) findViewById(R.id.lstContatos);
 
         //configurando ação ao clicar no botão
         btnAdicionar.setOnClickListener(this);
